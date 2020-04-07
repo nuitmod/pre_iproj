@@ -1,4 +1,4 @@
-//'use strict';
+'use strict';
 //from window.preact import preact;
 // { h, Component } from 'preact'
 //import { h, render} from preact';
@@ -36,4 +36,4 @@ function Icomp(){
 }
 
 //render_app()
-render(<Icomp />, document.getElementById("root"))
+render(<Icomp />, document.getElementById("root3"))

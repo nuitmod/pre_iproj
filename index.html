@@ -32,7 +32,8 @@
         <script src="https://cdn.jsdelivr.net/npm/babel-preset-preact@2.0.0/index.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/preact/dist/preact.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@mdi/lwc@0.0.1/index.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
+        <!--<script src="https://cdn.jsdelivr.net/npm/@mdi/lwc@0.0.1/index.min.js"></script>-->
        <script src="bundle.js"></script>
         <style>
             :root{
@@ -52,23 +53,25 @@
       </div>
       <div id="root"></div>
       <div id="root2"></div>
+      <div id="root3"></div>
 
     <script>
-    var {h, render, Component}=window.preact;
-  /*
-    var Component = window.preact.Component,
-        h = window.preact.h,
-        render = window.preact.render;
-*/
-    var PreactApp = function (props){
+    var {h, render, Component}=preact;
+
+    var name="Ruth";
+
+    var PreactApp = function (){
+      var name="Miut";
       return h('h5',
       {className: ''},
-      'Hello from Preact world!');
+      'Hello ', name);
     }
 
-    render(PreactApp(), document.getElementById("root"));
+    render(h(PreactApp), document.getElementById("root"));
 
     </script>
+  
+
     <script src="./app.js"></script>
     <script src="./index.js" type="module"></script>
     </body>
