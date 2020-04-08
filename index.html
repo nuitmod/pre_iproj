@@ -29,11 +29,15 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/preact/8.5.1/preact.min.js"></script>-->
       <!--  <script src="https://cdn.jsdelivr.net/npm/preact@10.3.4/dist/preact.min.js" type="module"></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/preact/8.5.2/preact.min.js'></script>
-        <script src="https://cdn.jsdelivr.net/npm/babel-preset-preact@2.0.0/index.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/preact/dist/preact.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>-->
         <!--<script src="https://cdn.jsdelivr.net/npm/@mdi/lwc@0.0.1/index.min.js"></script>-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <!--  <script src="https://cdn.jsdelivr.net/npm/babel-preset-preact@2.0.0/index.js"></script>-->
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-title" content="pre_iproj" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link rel="stylesheet" href="./css/style.css">
         <script src="./preacthtm.js"></script>
         <style>
             :root{
@@ -47,33 +51,16 @@
         </style>
     </head>
     <body>
-      <h5>iproj preact</h5>
-      <div class="">
-        <img src="./img/mod2.jpg" alt="" height="209" width="109">
-      </div>
       <div id="root"></div>
       <div id="root2"></div>
+      <div id="jq"></div>
       <div id="root3"></div>
 
     <script>
-    /*
-    var {h, render, Component}=preact;
-
-    var name="Ruth";
-
-    var PreactApp = function (){
-      var name="Miut";
-      return h('h5',
-      {className: ''},
-      'Hello ', name);
-    }
-
-    render(h(PreactApp), document.getElementById("root"));
-*/
+    $('#jq').html("<h6>jq is on</h6>")
+//console.log(mod2);
     </script>
-
-
-    <script src="./app.js"></script>
-    <script src="./index.js" type="module"></script>
+    <script src="./app.js" type="module"></script>
+    <script src="./index.js"></script>
     </body>
 </html>
