@@ -6,14 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel index.js -o bundle.js"
-},
-
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
-    "@babel/plugin-transform-react-jsx": "^7.9.4"
+    "@babel/plugin-transform-react-jsx": "^7.9.4",
+    "htm": "1.0.1",
+    "preact": "8.3.1",
+    "preact-compat": "3.18.4",
+    "styled-components": "3.4.9"
   }
 }
