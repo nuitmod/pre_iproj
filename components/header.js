@@ -26,9 +26,9 @@ var Header=function(){
      <div class="mobile-tab">
        <nav id="mobile">
          <ul>
-           <li><a href="/">main</a></li>
-           <li><a href="/rii">rii</a></li>
-           <li><a href="/mode">mode</a></li>
+           <li><a href="/pre_iproj/">main</a></li>
+           <li><a href="/pre_iproj/rii">rii</a></li>
+           <li><a href="/pre_iproj/mode">mode</a></li>
            <li><a href="#rend">rend</a></li>
            <li><a href="https://yoox.com">yoox.com</a></li>
          </ul>
