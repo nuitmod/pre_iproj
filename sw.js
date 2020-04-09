@@ -5,9 +5,10 @@ var urlsToCache = [
     'app.js',
     'preacthtm.js',
     'assets/logo-192.png',
-    'img/mode.jpg',
-    'img/mod2.jpg',
-    'img/code.jpg',
+    'img/jpg/mode.jpg',
+    'img/jpg/mod2.jpg',
+    'img/jpg/code.jpg',
+    'img/gif/dark.GIF',
     'components/header.js',
     'components/main.js',
     'css/style.css'

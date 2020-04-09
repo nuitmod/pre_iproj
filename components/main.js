@@ -10,7 +10,10 @@ var I_w1=function(){
     <div>
       <h6>w1 component data</h6>
       <div class="">
-        <img src="./img/mod2.jpg" alt="" height="209" width="109" />
+        <img src="./img/jpg/mod2.jpg" alt="" height="209" width="109" />
+      </div>
+      <div class="">
+        <img src="./img/gif/dark.GIF" alt="" height="209" width="109" />
       </div>
     </div>
   `
@@ -21,7 +24,7 @@ var I_w2=function(){
     <div>
       <h6>w2 component data</h6>
       <div class="">
-        <img src="./img/code.jpg" alt="" height="99" width="229" />
+        <img src="./img/jpg/code.jpg" alt="" height="99" width="229" />
       </div>
     </div>
   `
@@ -35,7 +38,7 @@ var I_w3=function(){
     <div>
       <h6>w3 component data</h6>
       <div class="">
-        <img src="./img/mode.jpg" alt="" height="209" width="109" />
+        <img src="./img/jpg/mode.jpg" alt="" height="209" width="109" />
       </div>
     </div>
   `
