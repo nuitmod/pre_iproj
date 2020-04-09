@@ -1,8 +1,8 @@
 //'use strict';
 ///** @jsx h */
 //import  './img/mode.jpg'
-
-var {html, render, Component}=htmPreact;
+import { html, Component, render } from 'https://unpkg.com/htm/preact/index.mjs?module';
+//var {html, render, Component}=htmPreact;
 //var htm = window.htm;
 //console.log(html);
 var I_w1=function(){

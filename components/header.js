@@ -1,5 +1,6 @@
 //import {$} from "./jq.js"
-var {html, render, Component}=htmPreact;
+//var {html, render, Component}=htmPreact;
+import { html, Component, render } from 'https://unpkg.com/htm/preact/index.mjs?module';
 
 var Header=function(){
   return html`
@@ -25,9 +26,9 @@ var Header=function(){
      <div class="mobile-tab">
        <nav id="mobile">
          <ul>
-           <li><a href="#main">main</a></li>
-           <li><a href="#mode">mode</a></li>
-           <li><a href="#rii">rii</a></li>
+           <li><a href="/">main</a></li>
+           <li><a href="/rii">rii</a></li>
+           <li><a href="/mode">mode</a></li>
            <li><a href="#rend">rend</a></li>
            <li><a href="https://yoox.com">yoox.com</a></li>
          </ul>
