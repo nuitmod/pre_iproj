@@ -1,8 +1,19 @@
-//import {$} from "./jq.js"
+//import * as jquery from "https://unpkg.com/jquery@3.3.1/dist/jquery.min.js?module"
 //var {html, render, Component}=htmPreact;
+//import * as $ from './../node_modules/jquery/dist/jquery.min.js';
 import { html, Component, render } from 'https://unpkg.com/htm/preact/index.mjs?module';
 
+//console.log(jquery);
+
 var Header=function(){
+  /*
+  var $ = window.$;
+  $('#jq').html("<h6>jq is on!!!</h6>")
+  $('.mobile-tab').hide();
+  $('#burg').on('click', function(){
+    $('.mobile-tab').slideToggle(600)
+  });
+  */
   return html`
     <section>
      <div class="bar">

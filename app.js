@@ -1,4 +1,6 @@
 //'use strict';
+//import  * as $ from "https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"
+//import * as $ from './node_modules/jquery/dist/jquery.min.js';
 import {I_w1, I_w2, I_w3} from './components/main.js';
 import {Header} from './components/header.js';
 import Router from 'https://unpkg.com/preact-router?module';
@@ -9,10 +11,14 @@ import { html, Component, render } from 'https://unpkg.com/htm/preact/index.mjs?
 //var {html, render, Component}=htmPreact;
 route('/pre_iproj', true)
 
+console.log(window.$);
+
 function App(){
+//  var $ = window.$;
+//  window.jQuery=jQuery;
+//  $('#jq').html("<h6>jq is on</h6>")
   return html`
     <div class=app>
-      <${Header} />
       <${Router} >
         <${I_w1} path="/pre_iproj/" />
         <${I_w2} path="/pre_iproj/rii" />
