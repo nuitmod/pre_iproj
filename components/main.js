@@ -8,7 +8,7 @@ import { html, Component, render } from 'https://unpkg.com/htm/preact/index.mjs?
 var I_w1=function(){
   return html`
     <div>
-      <h6>w1 component data</h6>
+      <h6>Welcome to niit mode</h6>
       <div class="">
         <img src="./img/gif/dark.GIF" alt="" height="209" width="109" />
       </div>
@@ -33,10 +33,10 @@ var I_w2=function(){
         <img src="./img/gif/triang.GIF" alt="" height="159" width="159" />
       </div>
       <div class="">
-        <iframe width="270" height="152" src="https://www.youtube.com/embed/8qg4LLiXCI0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <img src="./img/gif/err.GIF" alt="" height="89" width="159" />
       </div>
       <div class="">
-        <img src="./img/gif/err.GIF" alt="" height="89" width="159" />
+        <iframe width="270" height="152" src="https://www.youtube.com/embed/8qg4LLiXCI0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
   `
@@ -46,12 +46,11 @@ var I_w2=function(){
 var I_w3=function(){
   return html`
     <div id="mode">
-      <h6>w3 component data</h6>
-      <div class="mode">
-        <img src="./img/gif/stripe.GIF" alt="" height="99" width="229" />
-      </div>
       <div class="">
         <img src="./img/jpg/mode.jpg" alt="" height="209" width="109" />
+      </div>
+      <div class="mode">
+        <img src="./img/gif/stripe.GIF" alt="" height="159" width="199" />
       </div>
     </div>
   `
