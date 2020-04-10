@@ -11,7 +11,7 @@ import { html, Component, render } from 'https://unpkg.com/htm/preact/index.mjs?
 //var {html, render, Component}=htmPreact;
 route('/pre_iproj', true)
 
-console.log(window.$);
+//console.log(window.$);
 
 function App(){
 //  var $ = window.$;

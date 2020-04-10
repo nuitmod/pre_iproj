@@ -10,10 +10,13 @@ var I_w1=function(){
     <div>
       <h6>w1 component data</h6>
       <div class="">
+        <img src="./img/gif/dark.GIF" alt="" height="209" width="109" />
+      </div>
+      <div class="">
         <img src="./img/jpg/mod2.jpg" alt="" height="209" width="109" />
       </div>
       <div class="">
-        <img src="./img/gif/dark.GIF" alt="" height="209" width="109" />
+        <img src="./img/gif/halfsfer.GIF" alt="" height="209" width="109" />
       </div>
     </div>
   `
@@ -21,22 +24,32 @@ var I_w1=function(){
 
 var I_w2=function(){
   return html`
-    <div>
+    <div id="code">
       <h6>w2 component data</h6>
       <div class="">
         <img src="./img/jpg/code.jpg" alt="" height="99" width="229" />
+      </div>
+      <div class="">
+        <img src="./img/gif/triang.GIF" alt="" height="159" width="159" />
+      </div>
+      <div class="">
+        <iframe width="270" height="152" src="https://www.youtube.com/embed/8qg4LLiXCI0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="">
+        <img src="./img/gif/err.GIF" alt="" height="89" width="159" />
       </div>
     </div>
   `
 }
 
-//render(I_w1(), document.getElementById("root"))
-//var img="./img/mod2.jpg";
 
 var I_w3=function(){
   return html`
-    <div>
+    <div id="mode">
       <h6>w3 component data</h6>
+      <div class="mode">
+        <img src="./img/gif/stripe.GIF" alt="" height="99" width="229" />
+      </div>
       <div class="">
         <img src="./img/jpg/mode.jpg" alt="" height="209" width="109" />
       </div>
@@ -45,12 +58,7 @@ var I_w3=function(){
 }
 
 
-//render(I_w2(), document.getElementById("root2"))
-
 export {I_w1, I_w2, I_w3};
-//export {html, render, Component}
-
-
 
 //var html=htm.bind(h)
 /*

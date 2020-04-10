@@ -1,4 +1,4 @@
-var CACHE_NAME = 'version-1'; // bump this version when you make changes.
+var CACHE_NAME = 'version-2'; // bump this version when you make changes.
 // Put all your urls that you want to cache in this array
 var urlsToCache = [
     'index.html',
@@ -9,7 +9,7 @@ var urlsToCache = [
     'img/jpg/mod2.jpg',
     'img/jpg/code.jpg',
     'img/gif/dark.GIF',
-    'components/header.js',
+//    'components/header.js',
     'components/main.js',
     'css/style.css'
 ];
