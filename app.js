@@ -9,7 +9,7 @@ import { html, Component, render } from 'https://unpkg.com/htm/preact/index.mjs?
 //import {html, render, Component} from './components/index.js';
 
 //var {html, render, Component}=htmPreact;
-route('/pre_iproj', true)
+//route('/pre_iproj', true)
 
 //console.log(window.$);
 

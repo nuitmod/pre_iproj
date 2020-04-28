@@ -16,6 +16,6 @@
     "theme_color": "#0099ff",
     "background_color": "#0099ff",
     "display": "standalone",
-    
-    "start_url":"index.html"
+
+    "start_url":"pre_iproj/index.html"
 }

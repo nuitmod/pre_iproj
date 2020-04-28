@@ -1,10 +1,8 @@
 //'use strict';
 ///** @jsx h */
-//import  './img/mode.jpg'
+
 import { html, Component, render } from 'https://unpkg.com/htm/preact/index.mjs?module';
-//var {html, render, Component}=htmPreact;
-//var htm = window.htm;
-//console.log(html);
+
 var I_w1=function(){
   return html`
     <div>
@@ -49,9 +47,36 @@ var I_w3=function(){
       <div class="">
         <img src="./img/jpg/mode.jpg" alt="" height="209" width="109" />
       </div>
-      <div class="mode">
-        <img src="./img/gif/stripe.GIF" alt="" height="159" width="199" />
+      <div class="">
+        <img src="./img/gif/stripe.GIF" alt="" height="129" width="199" />
       </div>
+      <pre>
+      Крик пустоты
+
+      В безвременной бездне
+      Пустым восприятием
+      Со мною плыви
+
+      Исчезнув в мгновение
+      В ином возродившись
+      На новую ветвь перейди
+
+      Врата мироздания
+      Осколком сознания
+      Упавшей звездой распахни
+
+      Взглянув в битие
+      Непроявленной жизни
+      На уровень крайний взойди
+
+      И если не будет
+      В божественной призме
+      Немой красоты
+
+      То может услышишь
+      Как в судорогах жизни
+      Рождается крик пустоты...
+      </pre>
     </div>
   `
 }
@@ -59,27 +84,17 @@ var I_w3=function(){
 
 export {I_w1, I_w2, I_w3};
 
-//var html=htm.bind(h)
-/*
+/*var html=htm.bind(h)
+
 var Ww = function(){
     return h('h6', {className: ''},
     'w2 component data');
 }
-//render(Ww(), document.getElementById("root2"));
+render(Ww(), document.getElementById("root2"));
 
 var App = function (){
   return h(Ww)}
 
 render(h(App), document.getElementById("root2"));
-
-//render(<Ww />, document.getElementById("root2"));
-/*
-function Icomp(){
-  return (
-    <div>
-      <p>ww component data</p>
-    </div>
-  )
-}
+render(<Ww />, document.getElementById("root2"));
 */
-//render(<Icomp />, document.getElementById("root3"))
