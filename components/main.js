@@ -10,13 +10,13 @@ var I_w1=function(){
       <div class="">
         <img src="./img/gif/dark.GIF" alt="" height="209" width="109" />
       </div>
-      <div class="">
+<!--      <div class="">
         <img src="./img/jpg/mod2.jpg" alt="" height="209" width="109" />
       </div>
       <div class="">
         <img src="./img/gif/halfsfer.GIF" alt="" height="209" width="109" />
-      </div>
-    </div>
+     </div>
+-->    </div>
   `
 }
 
@@ -44,6 +44,9 @@ var I_w2=function(){
 var I_w3=function(){
   return html`
     <div id="mode">
+      <div class="">
+        <img src="./img/gif/halfsfer.GIF" alt="" height="209" width="109" />
+     </div>
       <div class="">
         <img src="./img/jpg/mode.jpg" alt="" height="209" width="109" />
       </div>
