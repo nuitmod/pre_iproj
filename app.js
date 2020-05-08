@@ -27,9 +27,11 @@ function App(){
         <${I_w1} path="/pre_iproj/" />
         <${I_w2} path="/pre_iproj/rii" />
         <${I_w3} path="/pre_iproj/mode" />
-        <${Mod_1},{Mod_2} path="/pre_iproj/mdl___" />
-        <${Mod_x} path="/pre_iproj/mdl" />
-      </>
+        <${Mod_1}${Mod_2} path="/pre_iproj/mdl___" />
+        <${Mod_x} style='background:black ; color:white' path="/pre_iproj/mdl" />
+      <//>
+      <${Mod_1} />
+      <${Mod_2} />
     </div>
   `;
 }
