@@ -35,6 +35,9 @@ var Mod_x=function(){
         </nav>
       </div>
     <h6>mod_x</h6>
+    <div class="">
+      <img src="./img/jpg/i_mod.JPG" alt="" height="159" width="149" />
+   </div>
     </div>
   `
 }
