@@ -4,18 +4,26 @@ import  * as $ from "https://unpkg.com/jquery@3.3.1/dist/jquery.min.js";
 
 var Mod_x=function(){
   var $ = window.$;
+  $(function(){
   $('#jq').html("<h6>jq is on</h6>");
   //2 menu
   $('.mobile2').hide();
-  $('.bar_2').on('click', function(){
+  $('.mobile2').on('click', function(){
     $('.mobile2').fadeToggle(200)
   });
+  $('.menu').on('click', function(){
+    $('.mobile2').fadeToggle(200)
+  });
+});
 
   return html`
     <div>
-      <div className="mob2">
-        <nav className="mobile2">
-          <ul className="mobile_items2">
+    <div style='background:black'>
+      <input class="menu" type="button" value="" style='height:10px; width:25px; margin-left:10px' />
+    </div>
+      <div class="mob2">
+        <nav class="mobile2">
+          <ul class="mobile_items2">
               <li><a href="/">main</a></li>
               <li><a href="/rii">rii</a></li>
               <li><a href="/mode">mode</a></li>
