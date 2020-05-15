@@ -5,7 +5,7 @@ import  * as $ from "https://unpkg.com/jquery@3.3.1/dist/jquery.min.js";
 var Mod_x=function(){
   var $ = window.$;
   $(function(){
-  $('#jq').html("<h6>jq is on</h6>");
+  //$('#jq').html("<h6>jq is on</h6>");
   //2 menu
   $('.mobile2').hide();
   $('.mobile2').on('click', function(){
@@ -15,7 +15,6 @@ var Mod_x=function(){
     $('.mobile2').fadeToggle(200)
   });
 });
-
   return html`
     <div>
     <div style='background:black'>
