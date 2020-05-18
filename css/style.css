@@ -133,7 +133,7 @@ pre{
     background: #0009; */
     background :rgba(0, 0, 0, 0.7);
     width: 259px;
-    height: 529px;
+    height: 599px;
     text-align: center;
     position: absolute;
     right: 0;
@@ -171,5 +171,5 @@ input{
   background-color: black;
 }
 #main{
-  
+
 }
