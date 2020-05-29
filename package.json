@@ -19,5 +19,12 @@
     "preact": "8.3.1",
     "preact-compat": "3.18.4",
     "styled-components": "3.4.9"
+  },
+  "dependencies": {
+    "mobx": "^5.15.4",
+    "mobx-observer": "^0.1.1",
+    "mobx-preact": "^3.0.0",
+    "mobx-react": "^6.2.2",
+    "preact-mobx-observer": "^1.1.3"
   }
 }

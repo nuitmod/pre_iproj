@@ -4,12 +4,15 @@
 import {I_w1, I_w2, I_w3} from './components/main.js';
 import {Header} from './components/header.js';
 //import {Mod_1, Mod_2} from './components/mdl.js';
-import Mod_1 from './components/mdl.js';
+import Yy from './components/mdl.js';
+import {Mod_1} from './components/mdl.js';
 import Mod_x from './components/Mod_x.js';
 import Router from 'https://unpkg.com/preact-router?module';
 import { route } from 'https://unpkg.com/preact-router?module';
 import { html, Component, render } from 'https://unpkg.com/htm/preact/index.mjs?module';
 //import {html, render, Component} from './components/index.js';
+//import I_mobx from './mobx_store.js';
+
 
 //var {html, render, Component}=htmPreact;
 route('/pre_iproj')
@@ -30,6 +33,7 @@ function App(){
         <${Mod_x} style='background:black ; color:white' path="/pre_iproj/mdl" />
       <//>
       <${Mod_1} />
+      <${Yy} />
     </div>
   `;
 }
