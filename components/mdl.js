@@ -147,10 +147,8 @@ var Yy = function(){
       <button onclick=${add_wm}>add_wm</button>
       <button onclick=${rm_wm}>rm_wm</button>
     </form>
-   <h6>mobx store${' '}
-   </h6>
-   ${imob.my_data}
-     <input type="button" value="change" onclick=${imob.ch_store} />
+   <h6>mobx store ${imob.my_data}</h6>
+    <input type="button" value="change" onclick=${imob.ch_store} />
   </div>
   `
 }
