@@ -1,9 +1,9 @@
 import { html, Component, render } from 'https://unpkg.com/htm/preact/index.mjs?module';
 import  imob   from "../mobx_store.js";
-import { observer } from '../node_modules/mobx-preact/lib/index.module.js';
+//import { observer } from '../node_modules/mobx-preact/lib/index.module.js';
 //import { observer } from './node_modules/mobx-preact/lib/index.module.js';
-import { decorate, observable, computed } from '../node_modules/mobx/lib/mobx.module.js';
-
+//import { decorate, observable, computed } from '../node_modules/mobx/lib/mobx.module.js';
+import { observer } from '../mobx_preact.module.js';
 
 var Mod_1=function(){
 

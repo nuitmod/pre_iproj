@@ -1,17 +1,17 @@
 import { html, render } from 'https://unpkg.com/htm/preact/index.mjs?module';
 //import {observer} from "https://cdn.jsdelivr.net/npm/mobx-preact@3.0.0/lib/index.module.js";
-import { observer } from './node_modules/mobx-preact/lib/index.module.js';
+//import { observer } from './node_modules/mobx-preact/lib/index.module.js';
 //import { Provider, connect } from "./node_modules/mobx-preact/lib/index.module.js";
 //import { observer } from "./node_modules/mobx-observer/observer.js?module";
 //import { observer } from "https://cdn.jsdelivr.net/npm/mobx-preact@3.0.0/lib/index.module.js?module";
 //import { @observable } from "https://unpkg.com/mobx-preact@3.0.0/lib/index.min.js"
 //import { Provider, connect } from "https://unpkg.com/browse/mobx-preact@3.0.0/lib/index.module.js"
 //import { observer } from './node_modules/mobx/lib/mobx.module.js';
-import { decorate, observable, computed, action } from './node_modules/mobx/lib/mobx.module.js';
-import { extendObservable } from './node_modules/mobx/lib/mobx.module.js';
+//import { decorate, observable, computed, action } from './node_modules/mobx/lib/mobx.module.js';
+//import { extendObservable } from './node_modules/mobx/lib/mobx.module.js';
 //import { observer } from './node_modules/mobx/lib/mobx.module.js';
 //import {observer} from 'mobx-observer'
-
+import { decorate, observable, computed, action } from './mobx.module.js';
 /*
 class Imob {
   constructor() {
