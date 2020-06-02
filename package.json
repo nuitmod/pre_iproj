@@ -25,6 +25,7 @@
     "mobx-observer": "^0.1.1",
     "mobx-preact": "^3.0.0",
     "mobx-react": "^6.2.2",
+    "preact-context": "^1.1.4",
     "preact-mobx-observer": "^1.1.3"
   }
 }

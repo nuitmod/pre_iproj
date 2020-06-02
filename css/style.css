@@ -27,6 +27,7 @@ span{
   width: 100%;
   background: #000;
   flex-direction: column;
+  z-index: 88;
 }
 #desktop{
   display: none;
@@ -169,4 +170,17 @@ pre{
 input, button{
   color: lightgray;
   background-color: black;
+  justify-content: center;
 }
+/*
+#i_w1 img{
+
+}
+
+#main{
+  display: block;
+  position: absolute;
+  top: 29px;
+
+}
+*/

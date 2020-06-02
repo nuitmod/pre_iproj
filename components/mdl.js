@@ -1,37 +1,46 @@
 import { html, Component, render } from 'https://unpkg.com/htm/preact/index.mjs?module';
 import  imob   from "../mobx_store.js";
-//import { observer } from '../node_modules/mobx-preact/lib/index.module.js';
-//import { observer } from './node_modules/mobx-preact/lib/index.module.js';
+//import { createContext } from '../preact_context.js?module';
+//import { useState } from 'https://cdnjs.cloudflare.com/ajax/libs/preact/10.4.4/hooks.module.min.js';
+import { useState, useReducer, useContext, useCallback} from "../preact_hooks.module.js";
 //import { decorate, observable, computed } from '../node_modules/mobx/lib/mobx.module.js';
 import { observer } from '../mobx_preact.module.js';
 
 var Mod_1=function(){
 
+  var [value, setValue] = useState(1);
+  var increment = useCallback(() => {
+    setValue(value + 1);
+  }, [value]);
+
   this.state={ status: "iiii"}
-  this.style={color: "purple"}
 
   var styles={
     h6: {
-      backgroundColor: 'black'
+      color: "white",
+      position: "absolute"
+  //    left: '20px'
+  //    top: "10px"
     }
   }
-
-  var get_wm=function(){
-    alert("wm!!!");
-  }
-
   var data={
     name: "Ruth",
     job: 'progr',
     wm: ['ivvie', 'yiia']
   }
-//  console.log(this);
+  var get_wm=function(){
+    alert(`value: ${value} wm!!!`);
+//    data.wm.forEach(i=>console.log(i));
+  }
+
   return html`
-  <div>
+  <div id="mod1">
     <h6>mod_1 ${data.name} is a ${data.job}</h6>
-       ${data.wm.forEach(i=>console.log(i))}
        ${this.state.status}
-       <input type="button" value="click" onclick=${get_wm} style='background:black ; color:white' />
+       <input type="button" value="click" onclick=${get_wm} style=${styles.h6} />
+       <h6>wm counter: ${value}
+       <button onclick=${increment}>increment</button>
+       </h6>
   </div>
   <br />
 
@@ -44,7 +53,6 @@ class Mod_2 extends Component{
 
   var name="Maud";
   var wm=['ivvie', 'yiia', "ii"]
-
   var get_data=function(dat=wm){
     alert(dat)
   }
@@ -54,7 +62,6 @@ var add_data=function(){
    wm.map(i=>html`<li>${i}</li>`)
 }
 // var wm_li=wm.map(w=><li>w</li>);
-
 
 state={
   name: "Miut",
@@ -112,7 +119,7 @@ render(){
 */
 var ch_st_wm=e=>{
     e.preventDefault();
-//    imob.my_data=e.target.value;
+    imob.my_data=e.target.value;
     imob.placehold_name="";
     console.log(imob.my_data);
     imob.wm.push(e.target.value);
@@ -136,7 +143,7 @@ var rm_wm=e=>{
       //var wm = i.imob.wm.pop(i.value);
       imob.wm.pop(e.target.value);
       console.log("rm list", imob.wm);
-  }
+}
 
 var Yy = function(){
   return html`

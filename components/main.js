@@ -5,11 +5,9 @@ import { html, Component, render } from 'https://unpkg.com/htm/preact/index.mjs?
 
 var I_w1=function(){
   return html`
-    <div>
+    <div id="i_w1">
       <h6>Welcome to niit mode</h6>
-      <div class="">
-        <img src="./img/gif/dark.GIF" alt="" height="209" width="109" />
-      </div>
+      <img src="./img/gif/dark.GIF" alt="" height="209" width="109" />
 <!--      <div class="">
         <img src="./img/jpg/mod2.jpg" alt="" height="209" width="109" />
       </div>
