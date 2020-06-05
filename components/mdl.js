@@ -1,10 +1,12 @@
 import { html, Component, render } from 'https://unpkg.com/htm/preact/index.mjs?module';
-import  imob   from "../mobx_store.js";
+import  imob2   from "../mobx_store.js";
+import  {imob}   from "../mobx_store.js";
 //import { createContext } from '../preact_context.js?module';
 //import { useState } from 'https://cdnjs.cloudflare.com/ajax/libs/preact/10.4.4/hooks.module.min.js';
 import { useState, useReducer, useContext, useCallback} from "../preact_hooks.module.js";
 //import { decorate, observable, computed } from '../node_modules/mobx/lib/mobx.module.js';
 import { observer } from '../mobx_preact.module.js';
+import { get, set, values } from '../mobx.module.js';
 
 var Mod_1=function(){
 
@@ -117,6 +119,8 @@ render(){
   }
 }
 */
+
+
 var ch_st_wm=e=>{
     e.preventDefault();
     imob.my_data=e.target.value;
@@ -145,8 +149,7 @@ var rm_wm=e=>{
       console.log("rm list", imob.wm);
 }
 
-var Yy = function(){
-  return html`
+var Yy = observer(function(){ return html`
   <div>
     <h6><ul>${imob.wm.map(i=>html`<li>${i}</li>`)}</ul></h6>
     <form onsubmit=${on_sub_wm}>
@@ -158,15 +161,50 @@ var Yy = function(){
     <input type="button" value="change" onclick=${imob.ch_store} />
   </div>
   `
-}
-/*
-decorate(Yy, {
-  my_data: computed,
-  wm: computed
 })
-*/
-export default observer(Yy);
-export {Mod_1};
+
+
+var temp_store={
+  name: ''
+}
+
+var handle_change=e=>{
+  temp_store.name=e.target.value
+}
+
+var handle_submit=e=>{
+  e.preventDefault();
+  add_w(temp_store)
+}
+
+var add_w=wm=>{                //wm=new temp_store
+    wm.id=Math.random();
+    imob2.data.push(wm);
+    wm.name = '';
+}
+
+var Uu = function(){
+  var wm_list=imob2.data.map(wm=>{ return html`
+    <div key=${wm.id}>
+      <div onclick=${()=>imob2.del_w(wm.id)}>name: ${ wm.name} </div>
+   </div>`
+  })
+return html`
+  <div>
+    <h6>mobx store ${imob2.inf}</h6>
+    <input type="button" value="change" onclick=${imob2.ch_store2} />
+    <h6>${wm_list}</h6>
+    <form onsubmit=${handle_submit}>
+      <label htmlfor="name">name</label>
+      <input type="text" id="name" onchange=${handle_change} value=${temp_store.name} />
+      <button>submit</button>
+    </form>
+  </div>`
+}
+
+export default observer(Uu);
+export {Mod_1, Yy};
+
 //   <h6><ul>${wm.map(i=>html`<li>${i}</li>`)}</ul></h6>
 //<input type="button" value="get_data" onclick=${get_data} style='background:black ; color:white' />
 //<input type="button" value="add_data" onclick=${add_data} style='background:black ; color:white' />

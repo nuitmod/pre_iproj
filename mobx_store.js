@@ -44,6 +44,35 @@ decorate(imob, {
     wm: observable,
     ch_store: action
 })
+
+var imob2={
+  inf: "imob2",
+  ch_store2: ()=>{
+      imob2.inf="Ruth"; console.log(imob2.inf);
+    },
+  data: [
+    { name: 'Maud', id: 1},
+    { name: 'Ruth', id: 2},
+    { name: 'Muit', id: 3}
+  ],
+  del_w: id=>{
+//    console.log(id);
+//    console.log(imob2.data.map(i=>i.name));
+    imob2.data=imob2.data.filter(wm=>{
+      return wm.id != id
+    });
+    console.log(imob2.data.map(i=>i.name));
+  }
+}
+
+decorate(imob2, {
+    inf: observable,
+    data: observable,
+    ch_store2: action,
+    del_w: action
+})
+
+
 /*
 
 class Todo {
@@ -95,6 +124,7 @@ var Mob=function(){
 //render(Mob(), document.getElementById("mobx"))
 
 //var i_mobx=observable({my_data: "hi mobx"})
-export default imob;
+export default imob2;
+export {imob};
 
 //export {obsever};

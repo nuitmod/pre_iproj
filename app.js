@@ -4,7 +4,8 @@
 import {I_w1, I_w2, I_w3} from './components/main.js';
 import {Header} from './components/header.js';
 //import {Mod_1, Mod_2} from './components/mdl.js';
-import Yy from './components/mdl.js';
+import {Yy} from './components/mdl.js';
+import Uu from './components/mdl.js';
 import {Mod_1} from './components/mdl.js';
 import Mod_x from './components/Mod_x.js';
 import Router from 'https://unpkg.com/preact-router?module';
@@ -34,6 +35,7 @@ function App(){
       <//>
       <${Mod_1} />
       <${Yy} />
+      <${Uu} />
     </div>
   `;
 }
